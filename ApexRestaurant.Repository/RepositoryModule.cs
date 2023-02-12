@@ -10,7 +10,7 @@ namespace ApexRestaurant.Repository
         public static void Register(IServiceCollection services)
         {
             services.AddDbContext<RestaurantContext>(options => options.UseSqlServer(
-                @"Server=MT-KIRAN-BISHWO\SQLEXPRESS;Initial Catalog=ApexRestaurantDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False",
+                @"Server=DESKTOP-0|1|2|G\SQLEXPRESS;Initial Catalog=ApexRestaurantDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False",
                 builder => builder.MigrationsAssembly(Assembly.GetExecutingAssembly().GetName().Name)
             ));
 
